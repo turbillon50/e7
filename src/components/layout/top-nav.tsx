@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { primaryNav, site } from "@/lib/site";
 import { Icon } from "@/components/ui/icon";
+import { Logo } from "@/components/ui/logo";
 import { clsx } from "@/lib/utils";
 
 function isActive(pathname: string, href: string) {
@@ -19,8 +20,8 @@ export function TopNav() {
     <header className="glass-nav fixed inset-x-0 top-0 z-50 border-b border-outline-variant/15">
       <div className="mx-auto flex max-w-frame items-center justify-between px-margin-mobile py-4 md:px-margin-desktop">
         <div className="flex items-center gap-8">
-          <Link href="/" className="font-serif text-headline-md uppercase tracking-widest text-primary">
-            {site.name.replace(" ", " ").toUpperCase()}
+          <Link href="/" aria-label={site.name}>
+            <Logo height={30} />
           </Link>
           <nav className="hidden items-center gap-6 md:flex">
             {primaryNav.map((item) => (
