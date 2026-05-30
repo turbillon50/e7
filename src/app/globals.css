@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #131313;
+  color: #e5e2e1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Respect mobile safe areas (notches / home indicators) for the app feel. */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ── Material Symbols ───────────────────────────────────────────── */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.material-symbols-outlined.filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* ── Cinematic Auteur utilities ─────────────────────────────────── */
+@layer components {
+  .cinematic-vignette {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(19, 19, 19, 0.85) 100%);
+  }
+
+  .grain-overlay {
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.03;
+    pointer-events: none;
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-nav {
+    background: rgba(19, 19, 19, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* Cinematic still placeholder — looks intentional even before/without an image. */
+  .film-poster {
+    background-image: linear-gradient(135deg, #201f1f 0%, #0e0e0e 60%, #1c1b1b 100%);
+    position: relative;
+  }
+  .film-poster::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.05;
+    pointer-events: none;
+  }
+
+  .timeline-line {
+    height: 2px;
+    background-color: rgba(204, 199, 175, 0.15);
+    position: relative;
+  }
+  .timeline-active {
+    height: 2px;
+    background-color: #f2ca50;
+    box-shadow: 0 0 8px rgba(242, 202, 80, 0.5);
+  }
+}
+
+/* Minimalist input fields: bottom border only, gold focus. */
+.field-underline {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #4d4635;
+  border-radius: 0;
+  transition: border-color 0.2s ease;
+}
+.field-underline:focus {
+  outline: none;
+  border-bottom-color: #f2ca50;
+}
+
+/* Custom scrollbar. */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #4d4635;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f2ca50;
+}
