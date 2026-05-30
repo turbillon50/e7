@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E7 PICTURES | Newsroom &amp; Community</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#353534",
+                        "secondary-container": "#484a46",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error-container": "#93000a",
+                        "on-surface": "#e5e2e1",
+                        "on-error": "#690005",
+                        "primary-fixed": "#ffe088",
+                        "surface": "#131313",
+                        "tertiary": "#cfcece",
+                        "on-secondary-fixed-variant": "#454744",
+                        "inverse-primary": "#735c00",
+                        "on-tertiary-container": "#444546",
+                        "surface-bright": "#393939",
+                        "outline-variant": "#4d4635",
+                        "on-primary": "#3c2f00",
+                        "primary": "#f2ca50",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#e9c349",
+                        "surface-container": "#201f1f",
+                        "secondary": "#c6c7c2",
+                        "on-secondary": "#2f312e",
+                        "surface-container-highest": "#353534",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-dim": "#131313",
+                        "primary-container": "#d4af37",
+                        "tertiary-container": "#b3b3b3",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#e3e3de",
+                        "on-secondary-container": "#b8b9b4",
+                        "secondary-fixed-dim": "#c6c7c2",
+                        "inverse-on-surface": "#313030",
+                        "tertiary-fixed": "#e3e2e2",
+                        "background": "#131313",
+                        "on-secondary-fixed": "#1a1c19",
+                        "on-background": "#e5e2e1",
+                        "on-primary-container": "#554300",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed": "#241a00",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "outline": "#99907c",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c7c6c6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .cinematic-grain {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+        }
+        .vignette {
+            background: radial-gradient(circle, transparent 50%, rgba(0,0,0,0.8) 100%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(200, 200, 200, 0.1);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #f2ca50;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="custom-scrollbar">
+<div class="cinematic-grain"></div>
+<!-- TopAppBar -->
+<nav class="fixed top-0 z-50 w-full bg-surface/80 backdrop-blur-xl dark:bg-surface/80 border-b border-outline-variant/15 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer hover:opacity-80 transition-opacity">menu</span>
+<span class="font-headline-md text-headline-md tracking-widest text-primary dark:text-primary">E7 PICTURES</span>
+</div>
+<div class="hidden md:flex gap-8 items-center text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm tracking-widest">
+<a class="hover:text-primary transition-colors" href="#">HOME</a>
+<a class="hover:text-primary transition-colors" href="#">PRODUCTIONS</a>
+<a class="text-primary font-bold" href="#">COMMUNITY</a>
+<a class="hover:text-primary transition-colors" href="#">ACCOUNT</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer hover:opacity-80 transition-opacity">notifications</span>
+</div>
+</nav>
+<main class="pt-32 pb-40 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<!-- Hero Section: Featured News -->
+<header class="mb-section-gap">
+<div class="relative h-[618px] w-full overflow-hidden rounded-lg group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A grand cinematic film set at sunset with massive cranes and professional lighting rigs. The scene captures the golden hour light hitting a high-end camera crew filming a dramatic sequence. The atmosphere is professional and artistic, with deep shadows and a warm champagne glow reflecting the prestige of a top-tier production studio. The overall mood is inspirational and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHFUiM8KzY_HVaZplVQhOT5S8WWfmJTYJtfjpjqcO_bpOF2DI7qewls5BCeGYfR3NpGvLk4DWlLs57fd64IXi6a21FOUd626lsj9qaHAwFa7EL-6sM3FfFQuYkxnOz-CHidqCZqDStEnTF8AMte8RIYCSXSkkkJy0jyqCOED7b7ZyZZ-9sO3RtedPoFYsZIyCtGz0aYwqlvoOmv2TY5RVhyqr8H1HO0NI2K0NrX0oHpfQccl2zGz4kdutrsvu5KApjAv0SVlmeK6rD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute bottom-12 left-12 right-12">
+<span class="font-label-sm text-label-sm text-primary mb-4 block uppercase tracking-[0.2em]">Newsroom • Exclusive</span>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white mb-6 max-w-3xl">Inside the Golden Hour: Capturing the Soul of 'The Eternal Horizon'</h1>
+<div class="flex gap-6 items-center">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-3 rounded-DEFAULT hover:bg-primary-fixed transition-colors">READ FEATURE</button>
+<span class="text-on-surface-variant/60 font-label-sm text-label-sm">DIRECTOR: MARCO ESTRADA | 2024</span>
+</div>
+</div>
+</div>
+</header>
+<!-- News Grid -->
+<section class="mb-section-gap">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-white">Latest from the Studio</h2>
+<p class="text-on-surface-variant font-body-md text-body-md mt-2">Explore behind-the-scenes, new projects, and interviews.</p>
+</div>
+<div class="flex gap-4">
+<button class="p-2 border border-outline-variant/30 rounded-full hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary">chevron_left</span>
+</button>
+<button class="p-2 border border-outline-variant/30 rounded-full hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Card 1: Behind the Scenes -->
+<div class="md:col-span-2 group cursor-pointer relative overflow-hidden rounded-lg h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up of a professional film production monitor displaying a high-contrast cinematic shot. In the background, out-of-focus studio lights create a beautiful bokeh effect in a dark, atmospheric room. The image conveys technical precision and high-end craftsmanship, using a palette of deep blacks and soft silver highlights. The mood is focused and artistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwmH4agm71X7Kq6gRMrUBrIhl6taTApOVoWiliSBusePhEaJuDyb2oc3blxp7NBvnGRSN0o16dYvz9Ku0315ZIpGZ4PAHR42pD27UeKBEuhWlk4kw336Fu7zueTY4STKXzyg54nRj48xcdAiwLQawKEiHgzXcsQbEgcRYpkjLi3uXee8AjPjNTTzwNwe-zqzxatnSAOOysyCswZ0vg3O3pG5YR_YRZcCQc2IC9_OqtUHREez3jy6vd1IhN9VpqZQsl5aa9DPvi-YrT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="text-primary font-label-sm text-label-sm mb-2 block uppercase">Behind the Scenes</span>
+<h3 class="font-headline-md text-white text-headline-md mb-2">The Architecture of Lighting</h3>
+<p class="text-on-surface-variant font-label-sm text-label-sm opacity-0 group-hover:opacity-100 transition-opacity">Discover the technical setup behind our latest sci-fi epic.</p>
+</div>
+</div>
+<!-- Card 2: New Projects -->
+<div class="md:col-span-1 group cursor-pointer relative overflow-hidden rounded-lg h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A vintage typewriter sitting on a dark wooden desk under a single pool of warm light. Scattered next to it are hand-annotated film scripts and a classic director's viewfinder. The setting is a moody, editorial office reflecting the creative development process of a film project. Dark mode aesthetic with sophisticated minimalism and high-contrast shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-XrM2YxkAGUKOyHGfcDsYWyNuSIty6ZS9-L7ekKzLYAQ9QjPErhBupntnuJ2hXxSucfj_jdLPHRUantBCy6hZx0wOP4rGah7JkSuu-gC1B1sSFEhZybqMhbiSsdl7JTpzzKIhuNI6e9LimsVWtOxswDmZn6CjOJq180c_gvt9eBlJuEwsMgjjzlkLsL2K1yegcXrlDIbyUoPJvbg4fD0rgDZM3CjiBzEIMjYdaCERKUdiCt-VoYqKRGdIJtKxFESOlTYY_tmsmzO6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="text-primary font-label-sm text-label-sm mb-2 block uppercase">Development</span>
+<h3 class="font-headline-md text-white text-headline-md mb-2">Script to Screen</h3>
+</div>
+</div>
+<!-- Card 3: Interviews -->
+<div class="md:col-span-1 group cursor-pointer relative overflow-hidden rounded-lg h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An intimate portrait of a film director in a dark studio setting, partially illuminated by a soft rim light. The mood is pensive and professional, emphasizing the human element behind the cinema. The visual style is editorial and sophisticated, with deep tonal layering and a rich champagne and charcoal color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCWeyF7Tp6wECSYxK0oGSqSdBKKitMYgVKMN-kGWSceAr6UYjyZNsSngpGbgd2jeuKGD_xi8dICt3rihUhrchGq-ISoAD6ANQ8WU36ShUKVJBFLl9WbGchXKU7RZuUeG5rOQ_YhVkgPxLRVos6G54CTvyQzFD0yRqqS-r8aEqRZd8nAptgIZXmutaWjsNY7_DU2iQyRxVy6AsNiroQawGSWsMqQHIjxBcTML5sI8dwLI_KRroaMv1FZIKvliMcEuDTzezjVG5dKHyI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="text-primary font-label-sm text-label-sm mb-2 block uppercase">Interviews</span>
+<h3 class="font-headline-md text-white text-headline-md mb-2">Art of Vision</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Section -->
+<section class="mb-section-gap">
+<div class="glass-panel p-12 rounded-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5">
+<span class="text-primary font-label-sm text-label-sm mb-4 block uppercase tracking-widest">Shareholders • Community</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white mb-6">Our Success is Your Legacy.</h2>
+<p class="text-on-surface-variant font-body-md text-body-md mb-8 leading-relaxed">
+                            Join a global circle of visionary investors. As an E7 Pictures partner, you don't just fund stories—you bring them to life. Gain access to exclusive production milestones and specialized shareholder recognition.
+                        </p>
+<!-- Recognition Levels -->
+<div class="space-y-6">
+<div class="flex items-center gap-6 p-4 border-l-2 border-primary bg-primary/5">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<div>
+<h4 class="font-bold text-white font-label-sm text-label-sm">EXECUTIVE TIER</h4>
+<p class="text-on-surface-variant/80 text-xs">Direct access to premiere invitations and quarterly production summits.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-4 border-l-2 border-outline-variant/30 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl">stars</span>
+<div>
+<h4 class="font-bold text-white font-label-sm text-label-sm">VISIONARY TIER</h4>
+<p class="text-on-surface-variant/80 text-xs">Digital recognition in film credits and private screening access.</p>
+</div>
+</div>
+</div>
+<button class="mt-12 w-full py-4 border border-primary text-primary font-label-sm text-label-sm rounded-DEFAULT hover:bg-primary hover:text-on-primary transition-all uppercase tracking-widest">
+                            UPGRADE YOUR PARTICIPATION
+                        </button>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 gap-4">
+<!-- Community Bento Items -->
+<div class="col-span-2 relative h-48 rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A wide shot of a prestigious red carpet premiere event at night. Flashbulbs create bursts of light against a dark, elegant theater entrance. The atmosphere is energetic and exclusive, reflecting a high-profile Hollywood premiere. The scene uses a sophisticated palette of deep blacks, shimmering golds, and cool whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCClsNQ9G9eACt0Khb5UfWsKwMsjGwX-llAHzkNXAtB4Y1vy_O8MklBxK63AmH6e-E81CIir5Ib0MWB6Ki5AEzWN_DN4P2bqhMCgDKgulBiVy9gbzhe7epCmj9rOvclyxmzFxwm_SiIEnSumD6-FCz_YM1XRQ4OXPfUqWV9A6LsdYIkzk9uN4yFTUr7NGwAylgcbkr4OcpriktP8sfujew_N_oRkA0PrHpLgyIgoevDUGQX4KzkdHkvJlL5hdk1e_CTEpbE2HZCnhrI"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<div class="text-center">
+<span class="block text-4xl font-headline-lg text-primary">85k+</span>
+<span class="text-white font-label-sm text-label-sm uppercase tracking-widest">Active Shareholders</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-8 flex flex-col justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4">account_balance_wallet</span>
+<h4 class="text-white font-bold mb-2">Total Value Built</h4>
+<p class="text-2xl font-headline-md text-primary">$124.5M</p>
+</div>
+<div class="bg-surface-container rounded-lg p-8 flex flex-col justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4">movie</span>
+<h4 class="text-white font-bold mb-2">Productions Live</h4>
+<p class="text-2xl font-headline-md text-primary">12</p>
+</div>
+<div class="col-span-2 p-8 border border-primary/20 bg-primary/5 rounded-lg">
+<div class="flex justify-between items-center">
+<div>
+<h4 class="text-white font-bold mb-1">Current Milestone</h4>
+<p class="text-on-surface-variant text-sm">Series B Round: 'The Last Echo' Production</p>
+</div>
+<span class="text-primary font-bold">78%</span>
+</div>
+<div class="mt-4 h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 78%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-surface/90 backdrop-blur-xl dark:bg-surface-container-lowest/90 border-t border-outline-variant/10 shadow-2xl flex justify-around items-center h-20 pb-safe px-4">
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 dark:text-on-surface-variant/60 hover:text-primary/80 transition-colors">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 dark:text-on-surface-variant/60 hover:text-primary/80 transition-colors">
+<span class="material-symbols-outlined">movie_filter</span>
+<span class="text-label-sm font-label-sm">Productions</span>
+</div>
+<div class="flex flex-col items-center justify-center text-primary dark:text-primary font-bold translate-y-[-2px] transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="text-label-sm font-label-sm">Community</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 dark:text-on-surface-variant/60 hover:text-primary/80 transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-label-sm font-label-sm">Account</span>
+</div>
+</nav>
+<script>
+        // Micro-interaction: Smooth hover for cards
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.transition = 'transform 0.3s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Sticky header opacity change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-surface/95');
+                nav.classList.remove('bg-surface/80');
+            } else {
+                nav.classList.add('bg-surface/80');
+                nav.classList.remove('bg-surface/95');
+            }
+        });
+    </script>
+</body></html>

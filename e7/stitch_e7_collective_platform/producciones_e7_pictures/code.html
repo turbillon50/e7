@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Productions | E7 PICTURES</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400&amp;family=Manrope:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#353534",
+                        "secondary-container": "#484a46",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error-container": "#93000a",
+                        "on-surface": "#e5e2e1",
+                        "on-error": "#690005",
+                        "primary-fixed": "#ffe088",
+                        "surface": "#131313",
+                        "tertiary": "#cfcece",
+                        "on-secondary-fixed-variant": "#454744",
+                        "inverse-primary": "#735c00",
+                        "on-tertiary-container": "#444546",
+                        "surface-bright": "#393939",
+                        "outline-variant": "#4d4635",
+                        "on-primary": "#3c2f00",
+                        "primary": "#f2ca50",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#e9c349",
+                        "surface-container": "#201f1f",
+                        "secondary": "#c6c7c2",
+                        "on-secondary": "#2f312e",
+                        "surface-container-highest": "#353534",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-dim": "#131313",
+                        "primary-container": "#d4af37",
+                        "tertiary-container": "#b3b3b3",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#e3e3de",
+                        "on-secondary-container": "#b8b9b4",
+                        "secondary-fixed-dim": "#c6c7c2",
+                        "inverse-on-surface": "#313030",
+                        "tertiary-fixed": "#e3e2e2",
+                        "background": "#131313",
+                        "on-secondary-fixed": "#1a1c19",
+                        "on-background": "#e5e2e1",
+                        "on-primary-container": "#554300",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed": "#241a00",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "outline": "#99907c",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c7c6c6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .film-grain {
+            position: relative;
+        }
+        .film-grain::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .cinematic-shadow {
+            background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0.8) 40%, rgba(19,19,19,0) 100%);
+        }
+        .glass-nav {
+            background: rgba(19, 19, 19, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .timeline-line {
+            height: 2px;
+            background: rgba(153, 144, 124, 0.2);
+        }
+        .timeline-active {
+            height: 2px;
+            background: #f2ca50;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 z-50 w-full glass-nav border-b border-outline-variant/15">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">menu</span>
+<span class="font-headline-md text-headline-md tracking-widest text-primary uppercase">E7 PICTURES</span>
+</div>
+<!-- Desktop Nav Items -->
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-label-sm font-label-sm uppercase text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-label-sm font-label-sm uppercase text-primary border-b-2 border-primary pb-1" href="#">Productions</a>
+<a class="text-label-sm font-label-sm uppercase text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Community</a>
+<a class="text-label-sm font-label-sm uppercase text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Account</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">notifications</span>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-16">
+<div class="max-w-4xl">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 text-primary">Active Productions</h1>
+<p class="text-on-surface-variant font-body-lg max-w-2xl leading-relaxed">
+                    Witness the evolution of storytelling. From the first spark of an idea to the global premiere, track the journey of our latest cinematic ventures.
+                </p>
+</div>
+</section>
+<!-- Productions Grid/List -->
+<section class="px-margin-mobile md:px-margin-desktop flex flex-col gap-section-gap">
+<!-- Production Item 1 -->
+<div class="group relative grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 overflow-hidden rounded-lg film-grain">
+<img alt="Cinematic production still" class="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A highly cinematic production still from a science fiction film set. Two actors stand on a dark, wet urban street at night, illuminated by soft blue and warm gold neon lights from nearby signs. The composition is wide, showing atmospheric smoke and deep shadows that create a moody, prestige drama aesthetic. The lighting is precisely directed, highlighting the texture of their costumes and the reflective surfaces of the pavement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1IcCDnmvWndTi1a8SuyLZFhLzIM4Y6MUopqdqIAc4vt-QrmZkgftPrEwFhq1uvhXFFeRWLpGdVCS4bpSqidm353IDrenvqX7r6oThTbhmhHkyU_7SkQhjb3N3QSm1UzMGE9MIV-ZZQmz6MOWUyqE2MBxUR4W6AgxapUKpxQMLUFatlA3-y0Ely5WRmuZQI_5KbUW-b_3hQBvUZRKSC7pBn493pMXZFiGTftnm4MKT1L2yt0nem9d1K29rf0ygr97sE0c8_tbf0umd"/>
+<div class="absolute inset-0 cinematic-shadow pointer-events-none"></div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-center gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-[0.2em]">Sci-Fi / Drama</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">HORIZON PROTOCOL</h2>
+</div>
+<!-- Production Timeline Tracker -->
+<div class="flex flex-col gap-4">
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>STATUS: FILMING</span>
+<span class="text-primary">65% COMPLETE</span>
+</div>
+<div class="relative w-full timeline-line">
+<div class="absolute top-0 left-0 timeline-active" style="width: 65%;"></div>
+</div>
+<div class="grid grid-cols-6 gap-1 mt-2">
+<div class="text-[10px] uppercase font-bold text-primary">Development</div>
+<div class="text-[10px] uppercase font-bold text-primary">Pre-Prod</div>
+<div class="text-[10px] uppercase font-bold text-primary">Filming</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Post-Prod</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Dist.</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Premiere</div>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md italic leading-relaxed">
+                        "In a world where memories are currency, one man discovers a debt that can never be paid."
+                    </p>
+<div class="flex gap-4 items-center">
+<button class="bg-primary text-on-primary px-8 py-3 rounded text-label-sm font-label-sm uppercase hover:bg-primary-fixed transition-colors">
+                            VIEW PROJECT
+                        </button>
+<button class="border border-outline-variant/30 text-on-surface px-8 py-3 rounded text-label-sm font-label-sm uppercase hover:bg-surface-variant/20 transition-colors">
+                            SHAREHOLDER UPDATES
+                        </button>
+</div>
+<div class="flex gap-8 border-t border-outline-variant/10 pt-6">
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant/60 uppercase">Director</span>
+<span class="text-on-surface font-medium">Elena Vance</span>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant/60 uppercase">Released</span>
+<span class="text-on-surface font-medium">Winter 2025</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Production Item 2 -->
+<div class="group relative grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-[0.2em]">Neo-Noir Thriller</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">SILENT MERCURY</h2>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>STATUS: POST-PRODUCTION</span>
+<span class="text-primary">88% COMPLETE</span>
+</div>
+<div class="relative w-full timeline-line">
+<div class="absolute top-0 left-0 timeline-active" style="width: 88%;"></div>
+</div>
+<div class="grid grid-cols-6 gap-1 mt-2">
+<div class="text-[10px] uppercase font-bold text-primary">Development</div>
+<div class="text-[10px] uppercase font-bold text-primary">Pre-Prod</div>
+<div class="text-[10px] uppercase font-bold text-primary">Filming</div>
+<div class="text-[10px] uppercase font-bold text-primary">Post-Prod</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Dist.</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Premiere</div>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md italic leading-relaxed">
+                        "The loudest secrets are the ones never spoken. A high-stakes heist in the heart of modern-day Tokyo."
+                    </p>
+<div class="flex gap-4 items-center">
+<button class="bg-primary text-on-primary px-8 py-3 rounded text-label-sm font-label-sm uppercase hover:bg-primary-fixed transition-colors">
+                            WATCH TRAILER
+                        </button>
+<button class="border border-outline-variant/30 text-on-surface px-8 py-3 rounded text-label-sm font-label-sm uppercase hover:bg-surface-variant/20 transition-colors">
+                            PRODUCTION LOGS
+                        </button>
+</div>
+<div class="flex gap-8 border-t border-outline-variant/10 pt-6">
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant/60 uppercase">Cinematographer</span>
+<span class="text-on-surface font-medium">Kaito Sato</span>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant/60 uppercase">Premiere</span>
+<span class="text-on-surface font-medium">May 2024</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 overflow-hidden rounded-lg film-grain">
+<img alt="Moody urban landscape" class="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A dark and moody ultra-wide shot of a rain-slicked Tokyo street at dusk. The vibrant neon signs in magenta, cyan, and gold reflect perfectly in the puddles on the ground. A single mysterious figure in a trench coat is silhouetted against the bright city lights, walking away from the camera. The image has a professional film grain texture and a deep, immersive cinematic depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYt_eTEQ8-zVEy5kru16Denq7T1WLG1YT9btU-BbKNgaIN6x4b1LV30ZKC3MxfLJ46nQyUs-NWYRWPrthd00b1Ri947QzESIOkq2R3rXD0GVngkYvBM55I0c4xE4wZXeJKtwGFasE94Iixpo-e70XxmXQHx4eSgUbJ14nHdMjQ53-ylxuw_b1Jsde7cZwoo0iebbhaAYoo35hL0RSS-bxsK-Fu9nmgjkiqWq1o64Pp7mWUS_DPsQH7vmXULnujmIHHYRL56UAxb-TN"/>
+<div class="absolute inset-0 cinematic-shadow pointer-events-none"></div>
+</div>
+</div>
+<!-- Production Item 3 (Development) -->
+<div class="group relative grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 overflow-hidden rounded-lg film-grain">
+<img alt="Classical architectural study" class="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An atmospheric and grand interior shot of a baroque library, with towering shelves filled with leather-bound books. Dust motes dance in shafts of warm sunlight streaming through high arched windows. The scene is captured with a high-end cinema camera, featuring rich textures, deep shadows, and a sophisticated color palette of mahogany browns and champagne golds. The vibe is mysterious, intellectual, and timeless." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx0XC2SQ3zkspZXjG-1dNbwL_FvGUotzWF5tWFUOVZszcPA92SizUIUplFDWwohaX_Fqh7uppfpDh52MMxtgQYQKi4JWrDrIv9gYGF5w0TcGRkHv3zsizpTDG2i6C1iCJMWFkmWKpDduBU_TzPIWXPhLBRxnm6xzwwNwOZRBkXKPpZlZ6ueu5Tvhrm5efrJY1KyQAKCDGdXU8fJpmyy53zkpXMMoS671m7M_3cAVDZNL5cjXRq_q4-iMQzVYlPnkXN1e9UcL-xNO_4"/>
+<div class="absolute inset-0 cinematic-shadow pointer-events-none"></div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-center gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-[0.2em]">Period Piece / Mystery</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">THE ALCHEMIST'S ECHO</h2>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>STATUS: DEVELOPMENT</span>
+<span class="text-primary">15% COMPLETE</span>
+</div>
+<div class="relative w-full timeline-line">
+<div class="absolute top-0 left-0 timeline-active" style="width: 15%;"></div>
+</div>
+<div class="grid grid-cols-6 gap-1 mt-2">
+<div class="text-[10px] uppercase font-bold text-primary">Development</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Pre-Prod</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Filming</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Post-Prod</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Dist.</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant/40">Premiere</div>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md italic leading-relaxed">
+                        "In the halls of forgotten wisdom, a young scholar uncovers a formula that could reshape reality or destroy it."
+                    </p>
+<div class="flex gap-4 items-center">
+<button class="bg-primary text-on-primary px-8 py-3 rounded text-label-sm font-label-sm uppercase hover:bg-primary-fixed transition-colors">
+                            BECOME AN INVESTOR
+                        </button>
+</div>
+<div class="flex gap-8 border-t border-outline-variant/10 pt-6">
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant/60 uppercase">Writer</span>
+<span class="text-on-surface font-medium">Julian Thorne</span>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant/60 uppercase">Timeline</span>
+<span class="text-on-surface font-medium">2026 Production</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Callout -->
+<section class="mt-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="bg-surface-container rounded-lg p-12 border border-outline-variant/15 relative overflow-hidden film-grain">
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="text-center">
+<span class="block text-display-lg font-display-lg text-primary">12</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Active Projects</span>
+</div>
+<div class="text-center">
+<span class="block text-display-lg font-display-lg text-primary">34</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">International Awards</span>
+</div>
+<div class="text-center">
+<span class="block text-display-lg font-display-lg text-primary">150k+</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Community Members</span>
+</div>
+<div class="text-center">
+<span class="block text-display-lg font-display-lg text-primary">$200M</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Production Value</span>
+</div>
+</div>
+<!-- Subtle background glow -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell (Mobile Only) -->
+<footer class="md:hidden fixed bottom-0 w-full z-50 glass-nav border-t border-outline-variant/10 shadow-2xl">
+<div class="flex justify-around items-center h-20 pb-safe px-4">
+<button class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-primary font-bold translate-y-[-2px] transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">movie_filter</span>
+<span class="text-label-sm font-label-sm">Productions</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">group</span>
+<span class="text-label-sm font-label-sm">Community</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-label-sm font-label-sm">Account</span>
+</button>
+</div>
+</footer>
+<!-- Desktop Footer Info -->
+<footer class="hidden md:block py-16 px-margin-desktop border-t border-outline-variant/15 bg-surface-container-lowest">
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md tracking-widest text-primary uppercase">E7 PICTURES</span>
+<p class="text-on-surface-variant max-w-xs text-label-sm">
+                    A cinematic powerhouse dedicated to the art of storytelling and the evolution of independent film production.
+                </p>
+</div>
+<div class="grid grid-cols-3 gap-16">
+<div class="flex flex-col gap-4">
+<h4 class="text-label-sm font-label-sm text-on-surface uppercase tracking-widest">Studio</h4>
+<ul class="flex flex-col gap-2 text-on-surface-variant text-label-sm">
+<li class="hover:text-primary transition-colors cursor-pointer">About Us</li>
+<li class="hover:text-primary transition-colors cursor-pointer">Careers</li>
+<li class="hover:text-primary transition-colors cursor-pointer">Press</li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-label-sm font-label-sm text-on-surface uppercase tracking-widest">Legal</h4>
+<ul class="flex flex-col gap-2 text-on-surface-variant text-label-sm">
+<li class="hover:text-primary transition-colors cursor-pointer">Terms of Service</li>
+<li class="hover:text-primary transition-colors cursor-pointer">Privacy Policy</li>
+<li class="hover:text-primary transition-colors cursor-pointer">Investor Relations</li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-label-sm font-label-sm text-on-surface uppercase tracking-widest">Social</h4>
+<ul class="flex flex-col gap-2 text-on-surface-variant text-label-sm">
+<li class="hover:text-primary transition-colors cursor-pointer">Instagram</li>
+<li class="hover:text-primary transition-colors cursor-pointer">X (Twitter)</li>
+<li class="hover:text-primary transition-colors cursor-pointer">YouTube</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant/5 text-center text-label-sm text-on-surface-variant/40">
+            © 2024 E7 PICTURES. ALL RIGHTS RESERVED. CINEMATOGRAPHY IS THE ARCHITECTURE OF DREAMS.
+        </div>
+</footer>
+<script>
+        // Simple scroll reveal effect for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.group.relative.grid').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-1000');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

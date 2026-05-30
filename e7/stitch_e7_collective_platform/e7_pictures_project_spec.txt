@@ -1,0 +1,21 @@
+# E7 Pictures Platform Specification
+
+## Brand Essence
+E7 Pictures is a film production company. The platform is a community for those who want to be part of the film industry. It is about belonging, participation, and pride.
+
+## Visual Identity
+- **Style**: Netflix Studio, Apple, MasterClass, A24.
+- **Colors**: Warm white, Champagne gold, Soft silver, Midnight blue, Dark graphite.
+- **Vibe**: Creative, Professional, Human, Inspirational, Premium.
+
+## Core Screens (Mobile PWA)
+1. **Home**: Cinematic hero section, "Forma parte de E7 Pictures", Why E7 (interactive cards), How it Works (simple journey).
+2. **Participation**: Modern cards for participation levels ($16, $50, $100, $300 MXN), custom amount, certificate preview.
+3. **Community/Newsroom**: Behind the scenes, project updates, exclusive content, recognition levels, badges.
+4. **My Account/Dashboard**: Participation summary, certificate access, document vault, upcoming events.
+5. **Productions**: Project tracker (Development to Premiere).
+6. **Certificate Page**: Elegant silver/gold certificate with QR verification.
+
+## Navigation
+- Bottom tab bar: Home, Productions, Community, Account.
+- Top navigation: Logo, Newsroom, Notifications.

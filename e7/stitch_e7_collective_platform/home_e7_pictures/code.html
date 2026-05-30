@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E7 PICTURES | Cinematic Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#353534",
+                        "secondary-container": "#484a46",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error-container": "#93000a",
+                        "on-surface": "#e5e2e1",
+                        "on-error": "#690005",
+                        "primary-fixed": "#ffe088",
+                        "surface": "#131313",
+                        "tertiary": "#cfcece",
+                        "on-secondary-fixed-variant": "#454744",
+                        "inverse-primary": "#735c00",
+                        "on-tertiary-container": "#444546",
+                        "surface-bright": "#393939",
+                        "outline-variant": "#4d4635",
+                        "on-primary": "#3c2f00",
+                        "primary": "#f2ca50",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#e9c349",
+                        "surface-container": "#201f1f",
+                        "secondary": "#c6c7c2",
+                        "on-secondary": "#2f312e",
+                        "surface-container-highest": "#353534",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-dim": "#131313",
+                        "primary-container": "#d4af37",
+                        "tertiary-container": "#b3b3b3",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#e3e3de",
+                        "on-secondary-container": "#b8b9b4",
+                        "secondary-fixed-dim": "#c6c7c2",
+                        "inverse-on-surface": "#313030",
+                        "tertiary-fixed": "#e3e2e2",
+                        "background": "#131313",
+                        "on-secondary-fixed": "#1a1c19",
+                        "on-background": "#e5e2e1",
+                        "on-primary-container": "#554300",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed": "#241a00",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "outline": "#99907c",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c7c6c6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .cinematic-vignette {
+            background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(19,19,19,0.85) 100%);
+        }
+        .grain-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .active-nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #f2ca50;
+        }
+        section {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary">
+<div class="grain-overlay fixed inset-0 z-[100]"></div>
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/15 px-margin-mobile md:px-margin-desktop py-4 flex justify-between items-center">
+<div class="flex items-center gap-8">
+<span class="font-headline-md text-headline-md tracking-widest text-primary uppercase">E7 PICTURES</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-label-sm text-label-sm text-primary uppercase relative active-nav-item" href="#home">Home</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors uppercase" href="#productions">Productions</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors uppercase" href="#community">Community</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary p-2 hover:opacity-80 transition-opacity">notifications</button>
+<button class="material-symbols-outlined text-primary p-2 hover:opacity-80 transition-opacity">menu</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-20" id="home">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img alt="E7 Pictures Hero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh4O-oUn-kmMwpENPdfW1dtiO6n9Lv3cc8avv1vi4a5mJpmOZQhs1_hL_pUf0LsjlI93FHa-wZZX0WOYq5CZyf-E_U37OAiWCMXy_eJhaV1d7muRL71pPHyfpyLprTogD5bGzF47tvbXyOWlWOXtL_wDPUBTbK4jNHkLzz_jBI66fMIwxT0g6Yn4w2OugeLmZBvIsyY4h3ifi0amXE01g-wmLCL38QxHg3qkQMu4wltTaCP8eoaQRJ2XThLoWXWSOtJbAGFI_b5w50"/>
+<div class="absolute inset-0 cinematic-vignette"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-margin-mobile flex flex-col items-center">
+<div class="mb-6 opacity-0 translate-y-10 animate-[fadeInUp_1s_ease_forwards]">
+<span class="font-label-sm text-label-sm text-primary-fixed tracking-[0.4em] uppercase mb-4 block">Auteur Aesthetic Studios</span>
+<h1 class="font-display-lg text-[48px] md:text-display-lg text-on-background leading-tight mb-8">Forma parte de E7 PICTURES</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto mb-10 leading-relaxed">
+                        Participa en el crecimiento de una empresa dedicada al desarrollo, producción y distribución de contenido cinematográfico.
+                    </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:brightness-110 transition-all rounded-sm">
+                            Quiero Participar
+                        </button>
+<button class="border border-outline-variant text-on-background px-10 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-white/5 transition-all rounded-sm">
+                            Explorar Proyectos
+                        </button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-on-surface-variant/40">
+<span class="font-label-sm text-[10px] uppercase tracking-widest">Desplazar</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</section>
+<!-- Why E7 (Interactive Cards) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto" id="productions">
+<div class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block">The Vision</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Por qué elegir E7</h2>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-md">Un ecosistema diseñado para potenciar el talento cinematográfico y democratizar la inversión en la gran pantalla.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="group relative aspect-[3/4] overflow-hidden glass-panel">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100" data-alt="A close up cinematic shot of a vintage film camera lens reflecting professional studio lights in a dark, atmospheric production set. The lighting is low-key with golden highlights, evoking a premium and professional filmmaking environment consistent with the E7 Pictures aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9IyR0AfEMR7_JItFK6nkrq-T5t080Xr5HiJWyW4QvT0Bbz8ziG_mC810xSP7NHVDkCgRC97T8jEuYqeTdgvhgT8h423z-1v3bAqfj5L6jy31htJZHlMhBOsOEDxhcY_B8uqbyf9SwAlQZfqmg3PTJ2dvceWzrLJQWcwVo4wfi_ihVnCXeiG2h12hLvjVH8gcWlQNPNavR3KnRaxlicmT5OyReufkSgaCQj69BYUUDZ9HqIY-7yy33z8VIqs3w3LIWDEmCtBbsHn-X"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<span class="material-symbols-outlined text-primary mb-4 block text-4xl">movie_filter</span>
+<h3 class="font-headline-md text-headline-md mb-2">Film Production</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3">Historias que trascienden el tiempo, creadas con la más alta calidad técnica y narrativa.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative aspect-[3/4] overflow-hidden glass-panel">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100" data-alt="An overhead artistic view of a director's script on a dark wooden table, surrounded by film reels and storyboards. The scene is lit by a single warm desk lamp, creating deep cinematic shadows and a scholarly, creative atmosphere focused on content development." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOMuiivBpvU7BagdcNVwzJaig38z94509qnWqTSA-fTXmhc9Eu5ID-g_FVEj3MLLI_nKjaWoIYxmqalsOt1HUjKi4kLWDHK3OEHm6tXZJNqQZZ_gKwdH0XKtFbNDYVetlrcypCoqsSqQ6U2vi3VQMnIj8Dx235DgrCRxbUN2D9k9swyLN3-ahbnJCUoy5itnNiAIazZbxd6eBdA0VHlGMz4cMi3KP4Vgnubz3H6oiwtKhFUSWRVSAt9V5aBqW_45YjCwMylatcwgq3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<span class="material-symbols-outlined text-primary mb-4 block text-4xl">edit_note</span>
+<h3 class="font-headline-md text-headline-md mb-2">Development</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3">Nuevos proyectos pensados para el futuro, desde la conceptualización hasta el guion final.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative aspect-[3/4] overflow-hidden glass-panel">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100" data-alt="A wide-angle shot of a grand, modern movie theater interior from the perspective of the screen looking back at the audience rows. The lighting is sophisticated, with soft blue and gold accents reflecting off the plush seats, symbolizing global distribution and reach." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzzGX2zrg4GxDKoO_QxTNrWzSjr51rYpG9hUJ5x6ida-uSaXbJEroV-DSG-7L_hY4ZXKJXwqcxL30N7PW5p8nVKGWFJ10CQlbEuChSMrspaM8Yz3vmfjEOqL45JAkGjySgSHwSv-p-xNi1VB3iUDY5IKrV_9NBHM_9gl7BOKmzRi4xGO4FJWHJ5esSlSXL1G0LlhpHHTjR23VAKDuS6_xi4XdMT5VckazNbEWayYU-x2RnjPS1A34vDwQ02AKWEsM4dIPgGsG8QkWq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<span class="material-symbols-outlined text-primary mb-4 block text-4xl">language</span>
+<h3 class="font-headline-md text-headline-md mb-2">Distribution</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3">Llevamos nuestras producciones a audiencias globales a través de canales estratégicos.</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative aspect-[3/4] overflow-hidden glass-panel">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100" data-alt="A diverse group of creative professionals standing on a film set, partially obscured by soft-focus foreground film equipment. The lighting is warm and collaborative, capturing the essence of creative talent and community spirit in a cinematic workplace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApvPzYlO77MtUjREYdJCThNO-OZoI8vWT5gtmWZ_bNQEzAlW45TAWNnBllKRTORygrht9H1VAAJNaGOhlHJlG0azOly8A2O41rjwzXUDPOHXYAZhjz0hdMEebZpZ3P78o9aR16uE5hbMZMUXCenxnu6yTazKWX08wWEEcy1K8u_gVXafOw_qObTd3lt4KdzLizeFNmRZSyPJ1AgJ7Ju8uRk2yXbowxu_kgm1YgSXOQMc2X67SQcF6rEsmThny3OD-aCBi_lAdSc1Cm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<span class="material-symbols-outlined text-primary mb-4 block text-4xl">group_work</span>
+<h3 class="font-headline-md text-headline-md mb-2">Creative Talent</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3">Accionistas que creen, participan y crecen junto a una comunidad de visionarios.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How it Works (Bento Layout) -->
+<section class="py-section-gap bg-surface-container-low overflow-hidden" id="community">
+<div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<div class="mb-16 text-center">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block">The Journey</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Tu Camino como Accionista</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 grid-rows-2 gap-gutter min-h-[600px]">
+<!-- Step 1 -->
+<div class="md:col-span-3 glass-panel p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-display-lg text-primary opacity-20 group-hover:opacity-100 transition-opacity">01</span>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">person_add</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-4 uppercase tracking-wider">Account Setup</h4>
+<p class="font-body-md text-on-surface-variant">Regístrate en nuestra plataforma exclusiva y forma parte de la red de inversionistas creativos de E7 Pictures.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="md:col-span-3 glass-panel p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-display-lg text-primary opacity-20 group-hover:opacity-100 transition-opacity">02</span>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">payments</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-4 uppercase tracking-wider">Participation</h4>
+<p class="font-body-md text-on-surface-variant">Elige el nivel de participación que mejor se adapte a tus objetivos. Desde mínimos accesibles hasta inversiones premium.</p>
+</div>
+</div>
+<!-- Step 3 & 4 (Tall Column) -->
+<div class="md:col-span-2 glass-panel p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-display-lg text-primary opacity-20 group-hover:opacity-100 transition-opacity">03</span>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">description</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-4 uppercase tracking-wider">Documents</h4>
+<p class="font-body-md text-on-surface-variant">Gestión legal transparente y digital de todos tus acuerdos.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="md:col-span-2 glass-panel p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-display-lg text-primary opacity-20 group-hover:opacity-100 transition-opacity">04</span>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">verified</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-4 uppercase tracking-wider">Certificate</h4>
+<p class="font-body-md text-on-surface-variant">Recibe tu certificado oficial que te acredita como parte de la producción cinematográfica.</p>
+</div>
+</div>
+<!-- Final Action -->
+<div class="md:col-span-2 bg-primary text-on-primary p-10 flex flex-col justify-between items-center text-center">
+<span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'FILL' 1;">stars</span>
+<div>
+<h4 class="font-headline-md text-headline-md mb-4 uppercase tracking-tight">Community</h4>
+<button class="bg-on-primary text-primary px-6 py-2 font-label-sm text-label-sm uppercase rounded-sm hover:scale-105 transition-transform">Join Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Banner -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-5xl mx-auto glass-panel p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[120px] rounded-full"></div>
+<div class="relative z-10 text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg mb-6">¿Listo para el estreno?</h2>
+<p class="font-body-lg text-on-surface-variant mb-0">Comienza hoy tu participación en E7 Pictures y sé parte de la próxima gran historia.</p>
+</div>
+<div class="relative z-10">
+<button class="bg-primary text-on-primary px-12 py-5 font-label-sm text-label-sm uppercase tracking-widest hover:brightness-110 shadow-xl transition-all">
+                        Quiero Ser Accionista
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10 py-16 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-2">
+<span class="font-headline-md text-headline-md tracking-widest text-primary uppercase block mb-6">E7 PICTURES</span>
+<p class="font-body-md text-on-surface-variant max-w-sm mb-8">Elevando el cine a nuevas dimensiones de participación e impacto visual. Auteur Aesthetic desde Ciudad de México.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">movie</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-6">Explorar</h5>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Portafolio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Directores</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Estrenos</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Inversión</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-6">Legal</h5>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Términos</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contratos</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Soporte</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="font-label-sm text-[10px] text-on-surface-variant/40 uppercase tracking-[0.2em]">© 2024 E7 Pictures Studios. Todos los derechos reservados.</span>
+<div class="flex gap-8">
+<span class="font-label-sm text-[10px] text-on-surface-variant/40 uppercase tracking-[0.2em]">Designed in CDMX</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant/40 uppercase tracking-[0.2em]">Premium Film Collective</span>
+</div>
+</div>
+</footer>
+<!-- Bottom Nav for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-t border-outline-variant/10 h-20 flex justify-around items-center px-4 shadow-2xl">
+<a class="flex flex-col items-center justify-center text-primary font-bold" href="#home">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-[10px] mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60" href="#productions">
+<span class="material-symbols-outlined">movie_filter</span>
+<span class="font-label-sm text-[10px] mt-1">Productions</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60" href="#community">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-sm text-[10px] mt-1">Community</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-label-sm text-[10px] mt-1">Account</span>
+</a>
+</nav>
+<script>
+        // Simple intersection observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.glass-panel').forEach(panel => {
+            panel.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(panel);
+        });
+
+        // Sticky nav active state logic
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active-nav-item', 'text-primary');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active-nav-item', 'text-primary');
+                    link.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>

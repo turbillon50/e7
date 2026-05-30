@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E7 PICTURES | Join the Legacy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#353534",
+                        "secondary-container": "#484a46",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error-container": "#93000a",
+                        "on-surface": "#e5e2e1",
+                        "on-error": "#690005",
+                        "primary-fixed": "#ffe088",
+                        "surface": "#131313",
+                        "tertiary": "#cfcece",
+                        "on-secondary-fixed-variant": "#454744",
+                        "inverse-primary": "#735c00",
+                        "on-tertiary-container": "#444546",
+                        "surface-bright": "#393939",
+                        "outline-variant": "#4d4635",
+                        "on-primary": "#3c2f00",
+                        "primary": "#f2ca50",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#e9c349",
+                        "surface-container": "#201f1f",
+                        "secondary": "#c6c7c2",
+                        "on-secondary": "#2f312e",
+                        "surface-container-highest": "#353534",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-dim": "#131313",
+                        "primary-container": "#d4af37",
+                        "tertiary-container": "#b3b3b3",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#e3e3de",
+                        "on-secondary-container": "#b8b9b4",
+                        "secondary-fixed-dim": "#c6c7c2",
+                        "inverse-on-surface": "#313030",
+                        "tertiary-fixed": "#e3e2e2",
+                        "background": "#131313",
+                        "on-secondary-fixed": "#1a1c19",
+                        "on-background": "#e5e2e1",
+                        "on-primary-container": "#554300",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed": "#241a00",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "outline": "#99907c",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c7c6c6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(204, 199, 175, 0.15);
+        }
+        .film-grain {
+            background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .vignette {
+            background: radial-gradient(circle, transparent 50%, rgba(19, 19, 19, 0.9) 100%);
+        }
+        .active-ring {
+            box-shadow: 0 0 0 2px #f2ca50;
+        }
+        input:focus {
+            outline: none;
+        }
+        .participation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md min-h-screen overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="fixed top-0 z-50 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/15 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">menu</span>
+<span class="font-headline-md text-headline-md tracking-widest text-primary uppercase">E7 PICTURES</span>
+</div>
+<div class="hidden md:flex gap-8 items-center text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">
+<a class="text-primary transition-opacity hover:opacity-80" href="#">Join</a>
+<a class="transition-opacity hover:opacity-80" href="#">Productions</a>
+<a class="transition-opacity hover:opacity-80" href="#">Manifesto</a>
+<a class="transition-opacity hover:opacity-80" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">notifications</span>
+</div>
+</header>
+<main class="pt-24 pb-32">
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Header -->
+<div class="mb-section-gap">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4 block">Executive Producer Invitation</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6 leading-tight">Become an Architect of <span class="italic text-on-surface-variant">Cinema.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant/80 max-w-xl">
+                            Move beyond the audience. E7 Pictures is opening the production office to visionary stakeholders. Participate in the industry from $16 MXN and own a piece of the next generation of storytelling.
+                        </p>
+</div>
+<div class="flex flex-col items-start md:items-end">
+<div class="glass-card p-6 rounded-lg border-primary/20">
+<span class="font-label-sm text-label-sm text-on-surface-variant/60 block mb-1">CURRENTLY RAISING</span>
+<div class="flex items-baseline gap-2">
+<span class="text-headline-lg font-headline-lg text-primary">$1.2M</span>
+<span class="text-label-sm text-on-surface-variant">MXN</span>
+</div>
+<div class="w-full bg-surface-variant h-[2px] mt-4 overflow-hidden">
+<div class="bg-primary h-full w-2/3"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Participation Tiers Grid -->
+<div class="participation-grid">
+<!-- Tier 1: $16 -->
+<div class="glass-card rounded-lg relative overflow-hidden group hover:scale-[1.02] transition-transform duration-500 cursor-pointer p-8 flex flex-col h-full border-primary/10">
+<div class="film-grain absolute inset-0"></div>
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary mb-4" style="font-size: 32px;">movie_filter</span>
+<h3 class="font-headline-md text-headline-md mb-1">Supporter</h3>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-tighter">Entry Level</p>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-headline-lg font-headline-lg text-primary">$16</span>
+<span class="text-label-sm text-on-surface-variant">MXN</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-label-sm text-on-surface-variant/80">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                                Digital Founding Member Certificate
+                            </li>
+<li class="flex items-center gap-2 text-label-sm text-on-surface-variant/80">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                                Access to Production Vlogs
+                            </li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-label-sm uppercase tracking-widest rounded hover:bg-primary-fixed transition-colors">Select Tier</button>
+</div>
+</div>
+<!-- Tier 2: $50 -->
+<div class="glass-card rounded-lg relative overflow-hidden group hover:scale-[1.02] transition-transform duration-500 cursor-pointer p-8 flex flex-col h-full border-primary/20 bg-primary/5">
+<div class="film-grain absolute inset-0"></div>
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary mb-4" style="font-size: 32px;">camera_roll</span>
+<h3 class="font-headline-md text-headline-md mb-1">Cinematographer</h3>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-tighter">Member Choice</p>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-headline-lg font-headline-lg text-primary">$50</span>
+<span class="text-label-sm text-on-surface-variant">MXN</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-label-sm text-on-surface-variant/80">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                                All Supporter Perks
+                            </li>
+<li class="flex items-center gap-2 text-label-sm text-on-surface-variant/80">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                                Name in "Community" Digital Credits
+                            </li>
+<li class="flex items-center gap-2 text-label-sm text-on-surface-variant/80">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                                Early Screening Access
+                            </li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-label-sm uppercase tracking-widest rounded hover:bg-primary-fixed transition-colors">Select Tier</button>
+</div>
+</div>
+<!-- Tier 3: $100 -->
+<div class="glass-card rounded-lg relative overflow-hidden group hover:scale-[1.02] transition-transform duration-500 cursor-pointer p-8 flex flex-col h-full border-primary/40">
+<div class="film-grain absolute inset-0"></div>
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary mb-4" style="font-size: 32px;">theater_comedy</span>
+<h3 class="font-headline-md text-headline-md mb-1">Director</h3>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-tighter">Professional</p>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-headline-lg font-headline-lg text-primary">$100</span>
+<span class="text-label-sm text-on-surface-variant">MXN</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-label-sm text-on-surface-variant/80">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                                High-Res Printed Certificate
+                            </li>
+<li class="flex items-center gap-2 text-label-sm text-on-surface-variant/80">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                                Script Reading Invitations
+                            </li>
+<li class="flex items-center gap-2 text-label-sm text-on-surface-variant/80">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                                Limited Edition Studio Swag
+                            </li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-label-sm uppercase tracking-widest rounded hover:bg-primary-fixed transition-colors">Select Tier</button>
+</div>
+</div>
+<!-- Tier 4: Custom -->
+<div class="glass-card rounded-lg relative overflow-hidden group hover:scale-[1.02] transition-transform duration-500 cursor-pointer p-8 flex flex-col h-full border-on-surface-variant/20">
+<div class="film-grain absolute inset-0"></div>
+<div class="mb-8">
+<span class="material-symbols-outlined text-on-surface-variant mb-4" style="font-size: 32px;">stars</span>
+<h3 class="font-headline-md text-headline-md mb-1">Auteur</h3>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-tighter">Custom Legacy</p>
+</div>
+<div class="mt-auto">
+<div class="mb-6">
+<label class="text-label-sm text-on-surface-variant/60 block mb-2">AMOUNT (MXN)</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary text-headline-md font-headline-md p-0 pb-2" placeholder="300+" type="number"/>
+</div>
+<p class="text-label-sm text-on-surface-variant/70 mb-8 italic">Define your own impact on the silver screen. Includes all Director tier rewards and beyond.</p>
+<button class="w-full py-4 border border-outline text-on-surface font-label-sm uppercase tracking-widest rounded hover:bg-surface-variant transition-colors">Initialize</button>
+</div>
+</div>
+</div>
+<!-- Dashboard Preview Section -->
+<div class="mt-section-gap grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="relative rounded-xl overflow-hidden aspect-video glass-card border-outline-variant/30 group">
+<img class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700" data-alt="A cinematic interior of a professional film editing suite in dark mode. Multiple glowing high-definition monitors display footage of a dramatic movie scene. Soft gold and silver accent lighting illuminates professional cameras and sound equipment in the background. The atmosphere is quiet, focused, and intensely artistic with deep shadows and refined textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9lqpMo5BcDUAqzQkWn-WSK6-FOC3oKS6pWvKJ5yIDbfcQWSOEDvvzd82Jz-4m8k_TbzNO8QzDPEeZjmCiJOrUCFyVwFnN_MLE2WusOfTjg6_ceaGolUinmez2lFnE6fL9eVEfApXmtyVp5eWmc5X-b2Cn3hoL1jjpKmVjDyQ4511niSlU7Sg_oD9hnClctKnZeRJsk8qBcOMS8qrNPO7xr1kXTn2wzszjMGYYAC7JdsmRxXQCEpjTCtTBKGuE0-uHGQL5f9qbPlR4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<div class="flex gap-4 items-center mb-4">
+<div class="bg-primary/20 text-primary px-3 py-1 text-label-sm rounded-full">LIVE PREVIEW</div>
+<div class="text-on-surface-variant text-label-sm">PRODUCTION OFFICE DASHBOARD</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Monitor every frame of your investment.</h4>
+<p class="text-body-md text-on-surface-variant/80">Access real-time production updates, budget breakdowns, and daily rushes directly from your member portal.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 glass-card rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<h5 class="text-headline-md font-headline-md mb-2">The Certificate</h5>
+<p class="text-body-md text-on-surface-variant/80">Each participation is anchored by a cryptographic certificate of authenticity, marking your place in E7 Pictures' history.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 glass-card rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">group</span>
+</div>
+<div>
+<h5 class="text-headline-md font-headline-md mb-2">The Community</h5>
+<p class="text-body-md text-on-surface-variant/80">Join private Discord channels where directors, writers, and producers share insights and vote on specific creative directions.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Closing CTA -->
+<div class="mt-section-gap py-20 border-y border-outline-variant/10 text-center relative overflow-hidden">
+<div class="vignette absolute inset-0 opacity-40"></div>
+<h2 class="font-headline-lg text-headline-lg mb-8 max-w-3xl mx-auto italic">"We are not just making films; we are building a studio of the people, for the stories that matter."</h2>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+<button class="px-12 py-5 bg-primary text-on-primary font-label-sm uppercase tracking-[0.2em] rounded-lg shadow-2xl hover:bg-primary-fixed transition-all active:scale-95 duration-200">
+                        Join the Industry
+                    </button>
+<button class="px-12 py-5 border border-primary/30 text-primary font-label-sm uppercase tracking-[0.2em] rounded-lg hover:bg-primary/5 transition-all">
+                        Download Manifesto
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-t border-outline-variant/10 flex justify-around items-center h-20 pb-safe px-4 shadow-2xl">
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 font-bold hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-primary font-bold transition-transform translate-y-[-2px] cursor-pointer">
+<span class="material-symbols-outlined">movie_filter</span>
+<span class="text-label-sm font-label-sm">Join</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 font-bold hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">group</span>
+<span class="text-label-sm font-label-sm">Community</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 font-bold hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-label-sm font-label-sm">Account</span>
+</div>
+</nav>
+<script>
+        // Micro-interaction for Tier selection
+        document.querySelectorAll('.participation-grid > div').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.participation-grid > div').forEach(c => {
+                    c.classList.remove('active-ring', 'bg-primary/10');
+                    c.classList.add('border-primary/10');
+                });
+                card.classList.add('active-ring', 'bg-primary/10');
+                card.classList.remove('border-primary/10');
+            });
+        });
+
+        // Atmospheric parallax on scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroText = document.querySelector('h1');
+            if(heroText) heroText.style.transform = `translateY(${scrolled * 0.1}px)`;
+        });
+    </script>
+</body></html>
