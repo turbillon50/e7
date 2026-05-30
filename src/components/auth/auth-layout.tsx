@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CinematicImage } from "@/components/ui/cinematic-image";
+import { Logo } from "@/components/ui/logo";
 import { site } from "@/lib/site";
 
 /** Split-screen cinematic auth scaffold shared by login & register. */
@@ -31,11 +32,8 @@ export function AuthLayout({
       {/* Form side */}
       <div className="flex flex-col justify-center px-margin-mobile py-12 md:px-20">
         <div className="mx-auto w-full max-w-md">
-          <Link
-            href="/"
-            className="mb-12 inline-block font-serif text-headline-md uppercase tracking-widest text-primary"
-          >
-            {site.name.toUpperCase()}
+          <Link href="/" aria-label={site.name} className="mb-12 inline-block">
+            <Logo height={30} />
           </Link>
           <span className="mb-3 block font-label-sm text-label-sm uppercase tracking-widest text-primary">
             {eyebrow}

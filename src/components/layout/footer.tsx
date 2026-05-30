@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { Icon } from "@/components/ui/icon";
+import { Logo } from "@/components/ui/logo";
 
 const columns = [
   {
@@ -28,9 +29,9 @@ export function Footer() {
     <footer className="border-t border-outline-variant/10 bg-surface-container-lowest px-margin-mobile py-16 md:px-margin-desktop">
       <div className="mx-auto grid max-w-frame grid-cols-1 gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <span className="mb-6 block font-serif text-headline-md uppercase tracking-widest text-primary">
-            {site.name.toUpperCase()}
-          </span>
+          <div className="mb-6">
+            <Logo height={32} />
+          </div>
           <p className="mb-8 max-w-sm font-body-md text-on-surface-variant">
             Elevando el cine a nuevas dimensiones de participación e impacto visual. Auteur
             Aesthetic desde {site.location}.
