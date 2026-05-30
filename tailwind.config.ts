@@ -1,0 +1,120 @@
+import type { Config } from "tailwindcss";
+
+/**
+ * Design tokens ported verbatim from the Google Stitch "Cinematic Prestige"
+ * design system (design/stitch-reference). Keep these in sync with the brand.
+ */
+const config: Config = {
+  darkMode: "class",
+  content: [
+    "./src/app/**/*.{ts,tsx}",
+    "./src/components/**/*.{ts,tsx}",
+    "./src/lib/**/*.{ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "surface-variant": "#353534",
+        "secondary-container": "#484a46",
+        "inverse-surface": "#e5e2e1",
+        "on-surface-variant": "#d0c5af",
+        "surface-container-lowest": "#0e0e0e",
+        "error-container": "#93000a",
+        "on-surface": "#e5e2e1",
+        "on-error": "#690005",
+        "primary-fixed": "#ffe088",
+        surface: "#131313",
+        tertiary: "#cfcece",
+        "on-secondary-fixed-variant": "#454744",
+        "inverse-primary": "#735c00",
+        "on-tertiary-container": "#444546",
+        "surface-bright": "#393939",
+        "outline-variant": "#4d4635",
+        "on-primary": "#3c2f00",
+        primary: "#f2ca50",
+        "on-primary-fixed-variant": "#574500",
+        "on-error-container": "#ffdad6",
+        "surface-tint": "#e9c349",
+        "surface-container": "#201f1f",
+        secondary: "#c6c7c2",
+        "on-secondary": "#2f312e",
+        "surface-container-highest": "#353534",
+        "primary-fixed-dim": "#e9c349",
+        "surface-dim": "#131313",
+        "primary-container": "#d4af37",
+        "tertiary-container": "#b3b3b3",
+        "on-tertiary": "#2f3131",
+        error: "#ffb4ab",
+        "secondary-fixed": "#e3e3de",
+        "on-secondary-container": "#b8b9b4",
+        "secondary-fixed-dim": "#c6c7c2",
+        "inverse-on-surface": "#313030",
+        "tertiary-fixed": "#e3e2e2",
+        background: "#131313",
+        "on-secondary-fixed": "#1a1c19",
+        "on-background": "#e5e2e1",
+        "on-primary-container": "#554300",
+        "surface-container-high": "#2a2a2a",
+        "on-primary-fixed": "#241a00",
+        "on-tertiary-fixed": "#1a1c1c",
+        "on-tertiary-fixed-variant": "#464747",
+        outline: "#99907c",
+        "surface-container-low": "#1c1b1b",
+        "tertiary-fixed-dim": "#c7c6c6",
+      },
+      borderRadius: {
+        DEFAULT: "0.125rem",
+        lg: "0.25rem",
+        xl: "0.5rem",
+        "2xl": "0.75rem",
+      },
+      spacing: {
+        "margin-mobile": "20px",
+        unit: "8px",
+        "section-gap": "120px",
+        "margin-desktop": "80px",
+        gutter: "24px",
+      },
+      maxWidth: {
+        frame: "1440px",
+      },
+      fontFamily: {
+        serif: ["var(--font-serif)", "Libre Caslon Text", "serif"],
+        sans: ["var(--font-sans)", "Manrope", "sans-serif"],
+        "headline-lg-mobile": ["var(--font-serif)", "serif"],
+        "body-lg": ["var(--font-sans)", "sans-serif"],
+        "body-md": ["var(--font-sans)", "sans-serif"],
+        "label-sm": ["var(--font-sans)", "sans-serif"],
+        "headline-lg": ["var(--font-serif)", "serif"],
+        "headline-md": ["var(--font-serif)", "serif"],
+        "display-lg": ["var(--font-serif)", "serif"],
+      },
+      fontSize: {
+        "headline-lg-mobile": ["32px", { lineHeight: "38px", fontWeight: "400" }],
+        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+        "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600" }],
+        "headline-lg": ["40px", { lineHeight: "48px", fontWeight: "400" }],
+        "headline-md": ["28px", { lineHeight: "34px", fontWeight: "400" }],
+        "display-lg": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "400" }],
+      },
+      keyframes: {
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(2.5rem)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        "fade-in-up": "fadeInUp 1s ease forwards",
+        "fade-in": "fadeIn 0.8s ease forwards",
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
